@@ -23,4 +23,7 @@ Route::get('/cart/delete/{id}', ["uses" => 'CartController@delete']);
 Route::get('/cart/minus/{id}', ["uses" => 'CartController@minus']);
 Route::get('/cart/plus/{id}', ["uses" => 'CartController@plus']);
 
+Route::get('/checkout/{id}', ["uses" => 'CheckoutController@index']);
+Route::get('/checkout/delete/{id}', ["uses" => 'CheckoutController@index']);
+
 Route::get('/home', 'HomeController@index')->name('home');
