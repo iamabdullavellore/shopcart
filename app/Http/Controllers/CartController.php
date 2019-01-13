@@ -51,13 +51,15 @@ class CartController extends Controller
     public function minus($id)
     {
         //$user=Auth::user()->id;
-        $count = Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->count();
-        //echo $count;die();
-        if($count>0){
+        $Cart = Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->first();
+        //echo $Cart;die();
+        if($Cart->quantity>1){
             $Cart = Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->first();
             $previous_quantity=$Cart->quantity;
             //print_r($Cart->product_id); die();
             Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->update(['quantity' =>$previous_quantity-1]);
+        }else if($Cart->quantity<=1) {
+            DB::table('cart')->where('user_id',Auth::user()->id)->where('product_id',$id)->delete();
         }
         
         return redirect('cart/'.Auth::user()->id);

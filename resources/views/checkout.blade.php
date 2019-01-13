@@ -2,7 +2,7 @@
 @if (Auth::guest())
 @section('title', 'Guest')
 @else
-@section('title', Auth::user()->name."'s Cart")
+@section('title', Auth::user()->name."'s Checkout Page")
 @endif
 @section('content')
 
