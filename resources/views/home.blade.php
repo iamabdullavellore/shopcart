@@ -314,12 +314,12 @@
             <div class="col-md-4">
                 <strong>Our Location</strong>
                 <hr>
-                <p>
-                     234, New york Street,<br />
-                                    Just Location, USA<br />
-                    Call: +09-456-567-890<br>
-                    Email: info@shopcart.com<br>
-                </p>
+                <li><a href="#"><strong>Address: </strong>
+                                <div>
+                                    4477, Shop Street,<br />
+                                    Shop Location, Shop
+                                </div>
+                            </a></li>
 
                 2019 www.shopcart.com | All Right Reserved
             </div>
