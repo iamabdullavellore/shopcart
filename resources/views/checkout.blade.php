@@ -38,7 +38,7 @@
 						@else	    
 						@foreach ($Cart as $Products)
 							<div class="row">
-								<div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+								<div class="col-xs-2"><img class="img-responsive" src="{{asset('img/').'/'.$Products->id.'.jpg'}}">
 								</div>
 								<div class="col-xs-4">
 									<h4 class="product-name"><strong>{{$Products->product_name}}</strong></h4><h4><small>{{$Products->product_name}}</small></h4>

@@ -22,6 +22,7 @@
 	        <img src="assets/img/dummyimg.png" alt="" />
 	        <div class="caption">
 	            <h3><a href="#">{{$Products->product_name}} </a></h3>
+	            <img src="{{asset('img/').'/'.$Products->id.'.jpg'}}" alt="" />
 	            <p>Price : <strong>$ {{$Products->price}}</strong>  </p>	
              	<p>Quantity : <strong>{{$Products->quantity}} Nos</strong>  </p>	            	          
              	<div class="btn-group mr-2" role="group" aria-label="Second group">
