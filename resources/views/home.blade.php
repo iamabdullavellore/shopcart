@@ -198,7 +198,8 @@
                         @foreach ($Categories_SubCategories_Products as $Products)
                         @if ($Products->sub_category_name==$sub_category->sub_category_name)
                         <div class="thumbnail product-box">
-                            <img src="{{ asset('img/dummyimg.png')}}" alt="" />
+                            <img src="{{asset('img/').'/'.$Products->id.'.jpg'}}" alt="" />
+                            <!-- <img src="{{asset('img/').'/'.$Products->id.'.jpg'}}"> -->
                             <div class="caption">
                                 <h3><a href="#">{{$Products->product_name}} </a></h3>
                                 <p>Price : <strong>$ {{$Products->price}}</strong>  </p>
