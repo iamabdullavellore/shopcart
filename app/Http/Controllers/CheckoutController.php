@@ -29,14 +29,14 @@ class CheckoutController extends Controller
 
         return view('checkout',['Cart'=>$Cart,'Total'=>$Total]);
     }
-    public function delete($id)
-    {
-        $count = Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->count();
-        //echo $count;die();
-        if($count>0){
-            DB::table('cart')->where('user_id',Auth::user()->id)->where('product_id',$id)->delete();
-        }
+    // public function delete($id)
+    // {
+    //     $count = Cart::where('user_id',Auth::user()->id)->where('product_id',$id)->count();
+    //     //echo $count;die();
+    //     if($count>0){
+    //         DB::table('cart')->where('user_id',Auth::user()->id)->where('product_id',$id)->delete();
+    //     }
 
-        return redirect('checkout/'.Auth::user()->id);
-    }
+    //     return redirect('checkout/'.Auth::user()->id);
+    // }
 }
