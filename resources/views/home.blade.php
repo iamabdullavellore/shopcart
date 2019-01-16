@@ -92,8 +92,7 @@
                     <div class="thumbnail product-box">
                         <img src="{{ asset('img/dummyimg.png')}}" alt="" />
                         <div class="caption">
-                            <h3><a href="#">Samsung Galaxy </a></h3>
-                            <p><a href="#">Ptional dismiss button </a></p>
+                            <h3><a href="#">Samsung Galaxy </a></h3>                           
                         </div>
                     </div>
                 </div>
@@ -104,8 +103,7 @@
                     <div class="thumbnail product-box">
                         <img src="{{ asset('img/dummyimg.png')}}" alt="" />
                         <div class="caption">
-                            <h3><a href="#">Samsung Galaxy </a></h3>
-                            <p><a href="#">Ptional dismiss button </a></p>
+                            <h3><a href="#">Samsung Galaxy </a></h3>                           
                         </div>
                     </div>
                 </div>
