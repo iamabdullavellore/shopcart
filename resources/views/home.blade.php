@@ -303,7 +303,7 @@
                                 <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
+                                <button type="submit" disabled class="btn btn-primary">Submit Request</button>
                             </div>
                         </div>
                     </div>
