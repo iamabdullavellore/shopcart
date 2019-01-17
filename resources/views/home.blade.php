@@ -172,9 +172,9 @@
                 <!-- /.div -->
                 <div class="row">
                     <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>1235  </strong>items</button>
+                        <button type="button" class="btn btn-default"><strong> {{count($Categories_SubCategories_Products)}} </strong>items</button>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                            <button type="button" disabled class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
                                 Sort Products &nbsp;
                             <span class="caret"></span>
                             </button>
@@ -204,7 +204,7 @@
                                 <h3><a href="#">{{$Products->product_name}} </a></h3>
                                 <p>Price : <strong>$ {{$Products->price}}</strong>  </p>
                                <!--  <p><a href="#">Ptional dismiss button </a></p> -->                               
-                                <p><a href="{{ url('cart/add', $Products->id) }}" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
+                                <p><a href="{{ url('cart/add', $Products->id) }}" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" disabled role="button">See Details</a></p>
                             </div>
                         </div>
                         @endif
